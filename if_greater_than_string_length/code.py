@@ -3,10 +3,11 @@ def checkIsDigit(j, y):
 
 
 def findNumber(x):
-    x = x.split()  # split string by elements and convert it into list
-    find_len = len(x)  # find length of x
+    x = x.split()                                                       # split string by elements and convert it into list
+    find_len = len(x)                                                   # find length of x
     numbers_collector = [el for el in x if checkIsDigit(find_len, el)]  # calling function checkIsDigit
-    # which returns true or false and then list comprehension adds element into list if el is digit and bigger than find len
+                                                                        # which returns true or false and then list comprehension adds element 
+                                                                        # into list if el is digit and bigger than find len
     return numbers_collector
 
 
