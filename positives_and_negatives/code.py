@@ -1,4 +1,4 @@
-def numsSum(x: list[int]):  # this is simple function to sum +inf nums with +inf nums and -inf nums with -inf nums
+def numsSum(x: list[int]):  # this simple function adds positive numbers to positive numbers and negative numbers to negative numbers
     total_of_positive = 0
     total_of_negative = 0
 
