@@ -1,50 +1,27 @@
-# dictionary_actions
+# lambda_funcs
 
-> Dictionary actions is сonsist of three modules which perform various actions with the list data type.
+> lambda_funcs is сonsist of five modules which perform various actions with the lambda fuctions and how to convert lambda fuctions into custom functions.
 
-#  1. How the keys_is_values works?       
-> This code is a simple converter from list into dictionary. Every element from user's input convert into {key: value}
-> pair which key and value is the same elements.
+#  1. How the anagram works?       
 
-> [!NOTE]
-> The function expects one argument which has type of data is list. Output of function will have type of dictionary.
- 
-# 2. How is rearrangement works?        
-> This code counts the numbers of tuples of two numbers where their product would be equal to the same value
-> obtained during multiplication.
+> This code compares the list elements passed to the function with the element passed to the function for comparison.
+> The element passed to the function from the list is sorted in lexicographic order and compared with the element being compared wrapped in the sorted() function.
 
-> First block of for cycle is iterating variable and checking the same indices.
-> If indices are equal, iteration is skipped, if not - two elements are multiplying and added into list.
+# 2. How is if_greater_than_string_length?        
 
-> Second block of for cycle is iterating list ad if key not in dictionary, the key added into dictionary with value -1
-> if key already in dictionary the value increase by +1.
-
-> The third block of for cycle if iterating dictionary by its values and with operator += calculating amount of tuples
-> with the same result of multiplications by combinatorics formula count * (count - 1) * 4.
+> This code is split into two functions. The checkIsDigit(j, y) function and the findNumber(x) function. First, the findNumber(x) function takes a list of string elements, then it is split into elements. 
+> Then the length of the list is found out, and then the elements are passed through a list comprehension to the checkIsDigit(j, y) function, which checks whether the element is a number and whether it is greater than the length of the list. If the result of the function is True, then the element is added to the numbers_collection variable, otherwise not.
    
-> [!NOTE]
-> The function expects one argument which has type of data is list. Output of function will have type of integer.
-   
-# 3. How is set_mismatch works?     
-This code finds duplicate numbers and restores the order of the elements.
+# 3. How is len_stirngs_with_title works?     
 
-> Dictionary adds elements from list and counting them by length where the key is the elements counted in order,
-> and their value is zero.
+> This code checks the elements to see if the element starts with a capital letter and then adds it to the list. The code then returns the length of all the elements in the list.
+> The code also shows a variant using a lambda function, which does the same job, only more compactly.
+> The lambda function iterates over the names variable and checks whether the element starts with a capital letter, the lambda function is wrapped in the filter() function, which returns an iterator, after which it is objectified by the list() function
 
-> In the next, cycle for iterating through nums variable and checking does dictionary have element by key. If True, the
-> key increases by values.
+# 4. How is list_with_min_and_max_len works? 
+> This code finds nested lists with minimum and maximum length in a given list of lists. It returns tuples containing the length and the list itself for the minimum and maximum cases.
+> The code also shows a variant using a lambda function, which does the same job, only more compactly.
 
-> Next cycle for was wrapped in list comprehension and check doubling values in dictionary.
-> After that, through the third for loop wrapped in a list, the comprehension iterates through the dictionary and
-> finds a key whose value is zero. After this, index 0 is indicated because list comprehension was applied and in
-> order not to add the entire list, then through index 0 we access the only element in the list and add only the
-> element itself
-
-
-> [!NOTE]
-> The function expects one argument which has type of data is list. Output of function will have type of list.
-
-> [!TIP]
-> Example:       
-> If variable has order: [1, 2, 2, 4]     
-> Ouptut will be: [_, 2, 3, _]  
+# 5. How is positives_and_negatives works? 
+> This simple function adds positive numbers to positive numbers and negative numbers to negative numbers. The function is passed a list containing positive and negative numbers.
+> The code also shows a variant using a lambda function, which does the same job, only more compactly.
